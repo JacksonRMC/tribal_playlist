@@ -1,0 +1,36 @@
+{
+  "name": "Tribal",
+  "description": "Collaborative playlists.",
+  "scripts": {
+  },
+  "env": {
+    "MONGODB_URI": {
+      "required": true
+    }
+  },
+  "formation": {
+  },
+  "addons": [
+    "mongolab"
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+
+    }
+  ],
+  "environments": {
+    "test": {
+      "buildpacks": [
+        { "url": "heroku/nodejs" },
+        { "url": "https://github.com/heroku/heroku-buildpack-google-chrome" }
+      ],
+      "env": {
+        "comment": "'env' is defined here to override the MONGODB_URI: true setting for Heroku CI test envioments.  I believe (unverified) the mongolab addon automatically sets this environment variable, but having it set to required=true causes Heroku to expect it to be preset via 'heroku config', which can't be done for heroku CI test apps."
+      },
+      "addons":[
+        "mongolab:sandbox"
+      ]
+    }
+  }
+}

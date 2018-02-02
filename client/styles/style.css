@@ -1,0 +1,133 @@
+body {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+html {
+  background: url("../resources/recordPlayer.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+h1 {
+  color: #000000;
+  text-align: center;
+  font-size: 60px;
+  font-family: 'Barrio', cursive;
+}
+
+h2 {
+  color: #CC6622;
+  text-align: center;
+  font-size: 24px;
+}
+
+#tribeList {
+  text-align: center;
+  width: 400px;
+  font-family: 'Barrio', cursive;
+  font-size: 30px;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+div {
+  font-size: 16px;
+}
+
+div.container {
+  width: 100%;
+}
+
+#songData {
+  display: flex;
+}
+
+#searchBar {
+  color: #000000;
+  height: auto;
+  width: 100%;
+  font-weight: bold;
+  margin-left: 65px;
+}
+
+th, td {
+  padding: 4px;
+}
+
+#inputField {
+  color: #AAAAAA;
+  background-color: #FFFFFF;
+  border-style: groove;
+  border-radius: 6px;
+}
+
+#songSearch {
+  padding-right: 7px;
+  padding-left: 7px;
+  border-color: black;
+  width: 200px;
+  height: 27px;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+#searchForm {
+  height: auto;
+}
+
+.addSongButton {
+  font-size: 12px;
+}
+
+#searchButton {
+  font-size: 16px;
+}
+
+.addSongButton,
+#searchButton {
+  border: none;
+  background-color: black;
+  border-radius: 15px;
+  font-family: 'Josefin Sans', sans-serif;
+  color: white;
+  cursor: pointer;
+  padding: 8px 12px;
+}
+
+.addSongButton {
+  position: absolute;
+  margin-left: 20px;
+  margin-top: 27px;
+}
+
+#songSearch:focus,
+#searchButton:focus,
+.addSongButton:focus {
+  outline: none;
+}
+
+#searchButton:active,
+.addSongButton:active {
+  background-color: #1ED760;
+}
+
+#searchResults {
+  height: auto;
+  width: 31%;
+  border-right: solid 2px;
+  border-color: black;
+  margin-left: 65px;
+  text-align: left;
+  overflow: hidden;
+}
+
+.searchResult{
+  margin-bottom: 10px;
+}
+
+#playlist {
+  height: auto;
+  width: 60%;
+  font-weight: bold;
+  padding: 3px;
+  margin-left: 15%;
+}

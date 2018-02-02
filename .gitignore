@@ -1,0 +1,16 @@
+# Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
+.grunt
+
+# Dependency directories
+# Deployed apps should consider commenting these lines out:
+# see https://npmjs.org/doc/faq.html#Should-I-check-my-node_modules-folder-into-git
+node_modules/
+.DS_Store
+remote.DS_Store
+
+# mongo database directory
+mongo/
+
+# Stuff from Kurt's text editor:
+*.pui
+*.prj
