@@ -1,3 +1,7 @@
+Tribal Playlist 
+
+![Screenshot](frontpage.png)
+
 
 ## Team
 
